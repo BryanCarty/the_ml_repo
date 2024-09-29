@@ -9,6 +9,7 @@ import FullScreenGraphic from "@/app/_components/FullScreenGraphic";
 import PromptSection from "@/app/_components/PromptSection";
 import PromptRow from "@/app/_components/PromptRow";
 import Prompt from "@/app/_components/Prompt";
+import SaltAndCinammon from "@/app/_animations/SaltAndCinammon";
 
 export default function HowMachineLearningWorks() {
   return (
@@ -39,7 +40,7 @@ export default function HowMachineLearningWorks() {
         <FullLengthParagraph text="Take for example a chef that wants to create the perfect fruit cake recipe. After adding a little bit of cinammon, he decides 'that tastes good, I'm going to add a little bit more next time I bake fruit cake'. On a different day, he could have added a little too much salt and decided 'Ok, next time I only need half that amount of salt'. It's through this iterative process of trial and error, he creates the perfect recipe (a function) to bake the perfect fruit cake (task or objective)." />
 
         <FullLengthParagraph text="The chef used his refined sense of taste to determine if he was getting closer or further away from the goal. A little more cinammon brought him closer to the goal. A little too much salt pushed him further away from the goal. In machine learning the 'objective function' takes the place of the chefs sense of taste. The objective function quantifies how good our current set of instructions (a function) is, and is used to steer the learning in the correct direction." />
-        <FullScreenGraphic />
+        <SaltAndCinammon />
         <FullLengthParagraph text="You might be wondering 'How does the objective function know what's good or bad. What if the objective function likes salty fruit cake?'. Well, similarily to how the chef built his refined sense of taste through years and years of experience, the objective function requires a lot of data to gauge what is good and bad. In this case, imagine the objective function has access to a big list of ingredients that go well together and ingredients that don't go well together. Every time a new ingredient is added to the recipe, the recipe ingredients are crosschecked against this list to gauge how good or bad the new ingredient combination tastes. This feedback informs the learning process whether we should add similar ingredients in the future or stay away from similar ingredients in the future." />
         <FullLengthParagraph text="This is a very high-level and over simplified example to give a foundational understanding of how many machine learning methods work. We dive much deeper into the workings of models in the articles following this one." />
         <HeadingOne text="Why do we need machine learning?" />

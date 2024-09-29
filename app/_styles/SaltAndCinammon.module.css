@@ -1,0 +1,41 @@
+.saltAndCinammon {
+  margin: 50px 0;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bowl,
+.rightHand,
+.leftHand {
+  animation: floating 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.salt {
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: 77% 100%;
+}
+.cinnamon {
+  transition: transform 0.5s ease-in-out;
+  transform-origin: 23% 100%;
+  cursor: pointer;
+}
+
+.cinnamon.rotate {
+  transform: rotate(60deg);
+}
+
+.salt.rotate {
+  transform: rotate(-60deg);
+}
