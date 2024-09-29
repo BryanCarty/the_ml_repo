@@ -1,0 +1,27 @@
+.prompt {
+  padding: 10px;
+  border: 2px solid #353535;
+  border-radius: 10px;
+  color: #353535;
+  cursor: pointer;
+}
+
+.prompt:hover {
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
